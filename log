@@ -32,3 +32,20 @@ Wed 16 Aug 2023 10:12:20 PM UTC:
  tests:  0|6
 total_score: 10/70
 28c02d2
+Wed 16 Aug 2023 11:10:04 PM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:30:15: error: expected ‘;’ before ‘arr’
+   30 |     aux=arr[i]
+      |               ^
+      |               ;
+   31 |     arr[i]=arr[size-i]
+      |     ~~~        
+exercises.c:28:7: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   28 |   int aux=0;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+52563ca
