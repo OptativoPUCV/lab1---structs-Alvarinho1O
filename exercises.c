@@ -27,9 +27,9 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size) {
   int aux=0;
   for (int i=0;i<size;i++){
-    aux=arr[i]
-    arr[i]=arr[size-i]
-    arr[size-i]=aux
+    aux=arr[i];
+    arr[i]=arr[size-i];
+    arr[size-i]=aux;
   }
 }
 
