@@ -39,7 +39,14 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+//int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+  //int NewArr[];
+  //for(int i=0;i<size;i++){
+    
+  //}
+  
+  
+  //return NULL; }
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -96,4 +103,23 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) { 
+      if (size == 0) {
+        return NULL;
+    }
+    Nodo* primerNodo = NULL;
+    Nodo* ultimoNodo = NULL;
+    for (int i = 0; i < size; i++) {
+        Nodo* nuevoNodo = (Nodo*)malloc(sizeof(Nodo));
+        nuevoNodo->numero = arr[i];
+        nuevoNodo->siguiente = NULL;
+        if (primerNodo == NULL) {
+            primerNodo = nuevoNodo;
+            ultimoNodo = nuevoNodo;
+        } else {
+            ultimoNodo->siguiente = nuevoNodo;
+            ultimoNodo = nuevoNodo;
+        }
+    }
+    return primerNodo;
+   }

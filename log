@@ -61,3 +61,15 @@ Wed 16 Aug 2023 11:16:06 PM UTC:
  tests:  0|5
 total_score: 20/70
 8277af7
+Thu 17 Aug 2023 12:27:35 AM UTC: 
+ exercises.c | 30 ++++++++++++++++++++++++++++--
+ 1 file changed, 28 insertions(+), 2 deletions(-)
+test.c: In function ‘test_filterEvenNumbers’:
+test.c:151:19: error: implicit declaration of function ‘filterEvenNumbers’; did you mean ‘test_filterEvenNumbers’? [-Werror=implicit-function-declaration]
+  151 |     int *result = filterEvenNumbers(arr, size, &newSize);
+      |                   ^~~~~~~~~~~~~~~~~
+      |                   test_filterEvenNumbers
+test.c:151:19: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+5fc2d13
