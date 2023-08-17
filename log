@@ -102,3 +102,9 @@ exercises.c:96:17: error: ‘Autor’ has no member named ‘apellido’
       |                 ^
 Compilation failed
 5f0eaef
+Thu 17 Aug 2023 01:10:19 AM UTC: 
+ exercises.c | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+ tests:  0|3
+total_score: 40/70
+ef3284e
