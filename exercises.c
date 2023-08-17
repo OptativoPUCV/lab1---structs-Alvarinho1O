@@ -85,7 +85,18 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) {
+    strncpy(libro->titulo, titulo, MAX_TITULO_LENGTH - 1);
+    libro->titulo[MAX_TITULO_LENGTH - 1] = '\0';
+
+    strncpy(libro->autor.nombre, nombreAutor, MAX_AUTOR_LENGTH - 1);
+    libro->autor.nombre[MAX_AUTOR_LENGTH - 1] = '\0';
+
+    strncpy(libro->autor.apellido, apellidoAutor, MAX_AUTOR_LENGTH - 1);
+    libro->autor.apellido[MAX_AUTOR_LENGTH - 1] = '\0';
+
+    libro->anioPublicacion = anioPublicacion;
+                      }
 
 /*
 Ejercicio 7: Lista enlazada de números

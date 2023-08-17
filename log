@@ -79,3 +79,26 @@ Thu 17 Aug 2023 12:28:03 AM UTC:
  tests:  0|4
 total_score: 30/70
 a7ae49d
+Thu 17 Aug 2023 01:07:26 AM UTC: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:89:36: error: ‘MAX_TITULO_LENGTH’ undeclared (first use in this function)
+   89 |     strncpy(libro->titulo, titulo, MAX_TITULO_LENGTH - 1);
+      |                                    ^~~~~~~~~~~~~~~~~
+exercises.c:89:36: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:92:47: error: ‘MAX_AUTOR_LENGTH’ undeclared (first use in this function)
+   92 |     strncpy(libro->autor.nombre, nombreAutor, MAX_AUTOR_LENGTH - 1);
+      |                                               ^~~~~~~~~~~~~~~~
+exercises.c:95:25: error: ‘Autor’ has no member named ‘apellido’
+   95 |     strncpy(libro->autor.apellido, apellidoAutor, MAX_AUTOR_LENGTH - 1);
+      |                         ^
+exercises.c:95:36: error: ‘apellidoAutor’ undeclared (first use in this function)
+   95 |     strncpy(libro->autor.apellido, apellidoAutor, MAX_AUTOR_LENGTH - 1);
+      |                                    ^~~~~~~~~~~~~
+exercises.c:96:17: error: ‘Autor’ has no member named ‘apellido’
+   96 |     libro->autor.apellido[MAX_AUTOR_LENGTH - 1] = '\0';
+      |                 ^
+Compilation failed
+5f0eaef
