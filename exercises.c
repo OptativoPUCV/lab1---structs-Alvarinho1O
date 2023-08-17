@@ -39,14 +39,14 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-//int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   //int NewArr[];
   //for(int i=0;i<size;i++){
     
   //}
   
   
-  //return NULL; }
+  return NULL; }
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados

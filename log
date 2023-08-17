@@ -73,3 +73,9 @@ test.c:151:19: error: initialization of ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 5fc2d13
+Thu 17 Aug 2023 12:28:03 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+a7ae49d
